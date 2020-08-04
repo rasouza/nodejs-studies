@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Olá, #{username}
+
+  h2 User List
+  form(method='POST')
+    label(for='msg')
+      input(name='msg', type='text')
+      input(type='submit', value='Enviar')
+  #chat
+
+  script(src='javascripts/socket.js')

@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    title Agenda
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    link(rel='icon', type='image/ico', href='favicon.html')
+    link(href='css/stylesheets.css', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='js/plugins/jquery/jquery.min.js')
+    script(type='text/javascript', src='js/plugins/jquery/jquery-ui.min.js')
+    script(type='text/javascript', src='js/plugins/jquery/jquery-migrate.min.js')
+    script(type='text/javascript', src='js/plugins/jquery/globalize.js')
+    script(type='text/javascript', src='js/plugins/bootstrap/bootstrap.min.js')
+    script(type='text/javascript', src='js/plugins/uniform/jquery.uniform.min.js')
+    script(type='text/javascript', src='js/js.js')
+    script(type='text/javascript', src='js/settings.js')
+  body.bg-img-num1
+    .container
+      .login-block
+        .block.block-transparent
+          .head
+            .user
+              .info.user-change
+                img.img-circle.img-thumbnail(src='img/example/user/dmitry_b.jpg')
+                .user-change-button
+                  span.icon-off
+          .content.controls.npt
+            .form-row.user-change-row
+              .col-md-12
+                .input-group
+                  .input-group-addon
+                    span.icon-user
+                  input.form-control(type='text', placeholder='Login')
+            .form-row
+              .col-md-12
+                .input-group
+                  .input-group-addon
+                    span.icon-key
+                  input.form-control(type='password', placeholder='Password')
+            .form-row
+              .col-md-6
+                a.btn.btn-default.btn-block.btn-clean(href='#') Register
+              .col-md-6
+                a.btn.btn-default.btn-block.btn-clean(href='#') Log In
+            .form-row
+              .col-md-12
+                a.btn.btn-link.btn-block(href='#') Forgot your password?
+            .form-row
+              .col-md-12.tac
+                strong OR USE
+            .form-row
+              .col-md-12
+                a.btn.btn-info.btn-block(href='#')
+                  span.icon-facebook
+                  |    Facebook
+            .form-row
+              .col-md-12
+                a.btn.btn-primary.btn-block(href='#')
+                  span.icon-twitter
+                  |    Tweeter
+    script.
+      

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to Agenda
+
+  #wrapper
+    h2 User List
+    table.table
+      thead
+        th UserName
+        th Email
+        th Action
+      tbody
+        each user in users
+          td: a(href='user/#{user._id}')= user.username
+          td= user.email
+          td
+            form(action='user/#{user._id}', method='POST')
+              input(type='hidden', value='DELETE', name='_method')
+              button(type='submit', value='delete') Delete
